@@ -22,16 +22,23 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 
 Completa la taula següent.
 
-| Persona      | Departament | Funció / responsabilitat | Necessita privilegis especials? Per què? |
-| ------------ | ----------- | ------------------------ | ---------------------------------------- |
-| Aina Ciurans | Direcció    |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
-|              |             |                          |                                          |
+| Persona          | Departament       | Funció / responsabilitat | Necessita privilegis especials? Per què? |
+| ---------------- | ----------------- | ------------------------ | ---------------------------------------- |
+| Aina Ciurans     | Direcció          |                          |                                          |
+| Rut Tornil       | Direcció          |                          |                                          |
+| Dídac Gassó      | Administració     |                          |                                          |
+| Laia Macias      | Administració     | Cap de departament       |                                          |
+| Estel Birosta    | Suport tècnic     |                          |                                          |
+| Aina Zuriguel    | Suport tècnic     |                          |                                          |
+| Lluïsa Richart   | Suport tècnic     | Cap de departament       |                                          |
+| Roser Alberch    | Producció musical |                          |                                          |
+| Guillem Adella   | Producció musical |                          |                                          |
+| Meritxell Reglat | Producció musical | Cap de departament       |                                          |
+| Alícia Monclús   | Producció musical |                          |                                          |
+| Carles Molins    | Producció musical |                          |                                          |
+| Eulàlia Galcera  | Producció musical |                          |                                          |
+| Talia Costas     | Informàtica       | Cap de departament       |                                          |
+| Alex Soriano     | Informàtica       |                          |                                          |
 
 ### 1.1. Reflexió
 
