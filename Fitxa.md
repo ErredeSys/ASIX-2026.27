@@ -2,7 +2,7 @@
 
 **Nom i cognoms:** Nil Rodríguez Berga  
 **Data:** 17/09/2026  
-**Equip / parella:** ********************\_********************
+**Equip / parella:** **\*\*\*\***\*\*\*\***\*\*\*\***\_**\*\*\*\***\*\*\*\***\*\*\*\***
 
 ## Objectiu
 
@@ -22,16 +22,16 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 
 Completa la taula següent.
 
-| Persona | Departament | Funció / responsabilitat | Necessita privilegis especials? Per què? |
-| ------- | ----------- | ------------------------ | ---------------------------------------- |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
-|         |             |                          |                                          |
+| Persona      | Departament | Funció / responsabilitat | Necessita privilegis especials? Per què? |
+| ------------ | ----------- | ------------------------ | ---------------------------------------- |
+| Aina Ciurans | Direcció    |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
+|              |             |                          |                                          |
 
 ### 1.1. Reflexió
 
