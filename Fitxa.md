@@ -390,19 +390,19 @@ Completa les frases amb les teves paraules.
 
 ### Usuari
 
-Un usuari representa:
+Un usuari representa: una persona
 
 ---
 
 ### Recurs
 
-Un recurs és:
+Un recurs és: un directori
 
 ---
 
 ### Permís
 
-Un permís determina:
+Un permís determina: els privilegis d'accés
 
 ---
 
@@ -410,7 +410,7 @@ Un permís determina:
 
 Un grup serveix per:
 
----
+Donar permisos a un conjunt d'usuaris
 
 ---
 
