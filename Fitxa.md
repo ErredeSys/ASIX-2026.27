@@ -432,7 +432,7 @@ Posa un exemple relacionat amb MusicCloud.
 
 ---
 
-En Dídac Gassó només hauria de tenir permisos de aa carpeta del departament compartida d'Administració, als recursos comuns de l'empresa i a la seva carpeta personal.
+En Dídac Gassó només hauria de tenir permisos de L/E a la carpeta del departament compartida d'Administració, als recursos comuns de l'empresa i a la seva carpeta personal permisos complerts. En cas de que participes a un projecte, també hauria de tenir permisos de L/E.
 
 ---
 
@@ -444,13 +444,13 @@ Quina de les dues estratègies consideres més adequada?
 
 ☐ Assignar permisos individualment a cada usuari.
 
-☐ Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
+x Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
 
 Justifica la resposta.
 
 ---
 
----
+He escollit aquesta opció ja que en cas de fer-ho individualment tindria molta feina manual, tindria alt risc de cometre errors i seria molt complicat fer un manteniment de tantes persones. D'aquesta manera que he escollit, podria genaralitzar els permisos en grups segons departaments i rol, podria afegir i treure persones amb molt poc temps i tindria una escalabilitat molt gran.
 
 ---
 
