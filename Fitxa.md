@@ -424,13 +424,15 @@ Explica amb les teves paraules què significa.
 
 ---
 
+Aixó significa que una persona només hauria de poder accedir als continguts que necessita accés per fer la seva feina.
+
 ---
 
 Posa un exemple relacionat amb MusicCloud.
 
 ---
 
----
+En Dídac Gassó només hauria de tenir permisos de aa carpeta del departament compartida d'Administració, als recursos comuns de l'empresa i a la seva carpeta personal.
 
 ---
 
