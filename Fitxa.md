@@ -290,6 +290,14 @@ Quin avantatge té aquesta solució respecte a donar permisos persona per person
 
 ---
 
+Aquesta solució respecte a donar permisos persona per persona et dona els següents avantatges:
+
+- Només cal configurar una vegada els permisos
+- Tots els que pertanyen al conjunt hereden els mateixos permisos automàticament
+- Evita possibles errors humans
+- És mes rapid afegir o treure persones
+- Hi ha més seguretat, ja que tots els que pertanyin tenens les mateixes prohicions.
+
 ---
 
 ### 6.2.
@@ -298,6 +306,8 @@ Si Dídac passa d'Administració a Producció musical, què caldria modificar?
 
 ---
 
+El que caldria fer seria modificar el grup al que pertany i assignar-li el nou. Fent aixó perdria tots els permisos dins d'Administració i obtindria els permisos de Producció musical.
+
 ---
 
 ### 6.3.
@@ -305,6 +315,8 @@ Si Dídac passa d'Administració a Producció musical, què caldria modificar?
 Com anomenaries aquests conjunts de persones?
 
 ---
+
+Aquests conjunts de persones els anomenaria grups d'usuaris.
 
 ---
 
