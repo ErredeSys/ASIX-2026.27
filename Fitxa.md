@@ -89,14 +89,14 @@ Utilitza:
 
 No busquis encara una solució tècnica. Pensa només en les necessitats de l'empresa.
 
-| Situació                                                             | Accés proposat | Justificació |
-| -------------------------------------------------------------------- | -------------- | ------------ |
-| Dídac accedeix a la carpeta compartida d'Administració               |                |              |
-| Laia accedeix a la gestió del departament d'Administració            |                |              |
-| Pere, treballador extern, accedeix als comunicats interns            |                |              |
-| Talia accedeix als backups del sistema                               |                |              |
-| Un membre de Producció musical accedeix a la carpeta d'Administració |                |              |
-| Un participant de `campanya_estiu` accedeix als fitxers del projecte |                |              |
+| Situació                                                             | Accés proposat | Justificació                                                            |
+| -------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
+| Dídac accedeix a la carpeta compartida d'Administració               | L/E            | Perqué és un treballador del departament d'administració                |
+| Laia accedeix a la gestió del departament d'Administració            | ADM            | Perqué es el cap del departament                                        |
+| Pere, treballador extern, accedeix als comunicats interns            | NA             | Perqué es un extern i podria haver informació confidencial de l'empresa |
+| Talia accedeix als backups del sistema                               | ADM            | Perqué necessita gestionar el sistema informàtic al complert            |
+| Un membre de Producció musical accedeix a la carpeta d'Administració | NA             | Perqué no pertany al departament                                        |
+| Un participant de `campanya_estiu` accedeix als fitxers del projecte | L/E            | Perqué necessita poder aportar informació al projecte                   |
 
 ---
 
@@ -126,6 +126,17 @@ Què passaria si l'empresa tingués **100 treballadors** amb el mateix tipus d'a
 
 ---
 
+Hauries de configurar 100 permisos individuals manualment i per tant seria una solució inviable en empreses reals
+Això implicaria:
+
+- Invertir molt de temps
+
+- Molts errors humans
+
+- Dificultat per mantenir-ho
+
+- Configuració repetitiva i poc eficient
+
 ---
 
 ### 4.2.
@@ -134,6 +145,16 @@ Què passaria cada vegada que s'incorporés una persona nova?
 
 ---
 
+Hauries de:
+
+- Crear l’usuari
+
+- Assignar-li manualment els permisos de lectura/escriptura
+
+- Comprovar que té l'accés que li dons està correcte
+
+- Repetir el procés cada vegada
+
 ---
 
 ### 4.3.
@@ -141,6 +162,14 @@ Què passaria cada vegada que s'incorporés una persona nova?
 Què passaria quan una persona canviés de departament?
 
 ---
+
+Hauries de:
+
+- Treure-li tots els permisos del departament antic
+
+- Tornar a configurar tots els permisos del departament nou
+
+- Comprovar que no conserva cap accés que no ha de tenir
 
 ---
 
@@ -152,9 +181,15 @@ No cal que coneguis encara el nom tècnic de la solució.
 
 ---
 
----
+Per gestionar aquestes persones conjuntament el millor seria crear un grup. Fent aixó podriem assignar permisos de L/E al grup i tots els usuaris que pertanyin al grup tindrien aquests permisos. Aixó aportaria molts avantatges com:
 
----
+- Si tens 100 treballadors → només configures 1 grup
+
+- Si entra algú nou → només l’afegeixes al grup
+
+- Si algú canvia de departament → el treus d’un grup i el poses a un altre
+
+- Els permisos sempre estan centralitzats i coherents
 
 ---
 
@@ -170,9 +205,25 @@ Quins accessos hauria de perdre?
 
 ---
 
+Dídac hauria de perdre tots els accessos del departament d’Administració que inclouen:
+
+- Accés a la carpeta del departament d’Administració
+
+- Accés a informes, documents i recursos interns d’Administració
+
+- Accés a carpetes compartides exclusives del departament
+
+- Qualsevol permís especial associat al grup d’Administració
+
 Quins accessos hauria d'obtenir?
 
 ---
+
+- Accés a la carpeta del departament de Producció musical
+
+- Accés als recursos comuns del departament
+
+- Accés a les carpetes compartides del seu nou equip
 
 ---
 
@@ -184,7 +235,15 @@ Quins accessos caldria configurar?
 
 ---
 
----
+Caldria afegir-la al grup del departament d’Administració
+
+Donar-li accés a:
+
+- La carpeta del departament
+
+- Els recursos comuns de l’empresa
+
+- La seva carpeta personal
 
 ---
 
@@ -196,7 +255,13 @@ Què hauríem de fer amb els seus accessos?
 
 ---
 
----
+- Desactivar el seu compte (o eliminar-lo)
+
+- Treure’l de tots els grups
+
+- Anul·lar qualsevol accés a carpetes, serveis o recursos
+
+En casos excepcionals, també podriem guardar el seu directori personal si cal conservar informació.
 
 ---
 
