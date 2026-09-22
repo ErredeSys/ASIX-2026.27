@@ -326,13 +326,15 @@ A partir de l'organització de l'empresa, proposa els primers conjunts de person
 
 **No cal trobar encara la solució definitiva.**
 
-| Nom proposat | Qui hi pertanyeria? | Per què existeix aquest conjunt? |
-| ------------ | ------------------- | -------------------------------- |
-|              |                     |                                  |
-|              |                     |                                  |
-|              |                     |                                  |
-|              |                     |                                  |
-|              |                     |                                  |
+| Nom proposat        | Qui hi pertanyeria?                                                                              | Per què existeix aquest conjunt?                     |
+| ------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| Direcció            | Aina Ciurans i Rut Tornil                                                                        | Per els que pertanyen al departament                 |
+| Administració       | Dídac Gassó i Laia Macias                                                                        | Per els que pertanyen al departament                 |
+| Suport tècnic       | Estel Birosta, Aina Zurigel i Luïsa Richart                                                      | Per els que pertanyen al departament                 |
+| Producció musical   | Roser Alberch, Guillem Adella, Meritxell Reglat, Alícia Monclús, Carles Molins i Eulàlia Galcera | Per els que pertanyen al departament                 |
+| Informàtica         | Talia Costas i Alex Soriano                                                                      | Per gestionar tot el sistema informàtic de l'empresa |
+| Caps de departament | Laia Macias, Luïsa Richart, Mertixell Reglat i Talia Costas                                      | Per assignar permisos amb més privilegis             |
+| Usuaris Estàndards  | Tots els treballadors                                                                            | Per donar uns permisos mínims a tothom               |
 
 ---
 
@@ -343,11 +345,13 @@ Laia treballa al departament d'Administració, però també és la responsable d
 És suficient que pertanyi només al conjunt `Administració`?
 
 ☐ Sí  
-☐ No
+x No
 
 Per què?
 
 ---
+
+No, perque necessita mes permisos dins el departament que un treballador qualsevol del departament.
 
 ---
 
@@ -355,7 +359,7 @@ Quina possible solució proposes?
 
 ---
 
----
+Proposo crear un grup a cada departament on pertanyi cada cap per tenir diferents permisos.
 
 ---
 
@@ -370,13 +374,13 @@ Campanya Estiu
 Creus que hauríem de canviar-les de departament?
 
 ☐ Sí  
-☐ No
+x No
 
 Si no, com podríem donar-los accés als recursos del projecte?
 
 ---
 
----
+Per donar-los accés, hauriem d'assignar permisos a les carpetes compartides i no directament als usuaris o al grup.
 
 ---
 
