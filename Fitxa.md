@@ -22,46 +22,42 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 
 Completa la taula següent.
 
-| Persona          | Departament       | Funció / responsabilitat | Necessita privilegis especials? Per què? |
-| ---------------- | ----------------- | ------------------------ | ---------------------------------------- |
-| Aina Ciurans     | Direcció          |                          |                                          |
-| Rut Tornil       | Direcció          |                          |                                          |
-| Dídac Gassó      | Administració     |                          |                                          |
-| Laia Macias      | Administració     | Cap de departament       |                                          |
-| Estel Birosta    | Suport tècnic     |                          |                                          |
-| Aina Zuriguel    | Suport tècnic     |                          |                                          |
-| Lluïsa Richart   | Suport tècnic     | Cap de departament       |                                          |
-| Roser Alberch    | Producció musical |                          |                                          |
-| Guillem Adella   | Producció musical |                          |                                          |
-| Meritxell Reglat | Producció musical | Cap de departament       |                                          |
-| Alícia Monclús   | Producció musical |                          |                                          |
-| Carles Molins    | Producció musical |                          |                                          |
-| Eulàlia Galcera  | Producció musical |                          |                                          |
-| Talia Costas     | Informàtica       | Cap de departament       |                                          |
-| Alex Soriano     | Informàtica       |                          |                                          |
+| Persona          | Departament       | Funció / responsabilitat   | Necessita privilegis especials? Per què?                                                                                                   |
+| ---------------- | ----------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Aina Ciurans     | Direcció          | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Rut Tornil       | Direcció          | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Dídac Gassó      | Administració     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Laia Macias      | Administració     | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
+| Estel Birosta    | Suport tècnic     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Aina Zuriguel    | Suport tècnic     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Lluïsa Richart   | Suport tècnic     | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
+| Roser Alberch    | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Guillem Adella   | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Meritxell Reglat | Producció musical | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
+| Alícia Monclús   | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Carles Molins    | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Eulàlia Galcera  | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
+| Talia Costas     | Informàtica       | Administrador del sistema  | Sí, Crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
+| Alex Soriano     | Informàtica       | Administrador del sistema  | Sí, Crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
 
 ### 1.1. Reflexió
 
 Quines diferències observes entre un **treballador**, un **departament** i una **funció o responsabilitat**?
 
----
+--- Treballador: És la persona concreta: un individu amb nom i cognoms.
 
----
+--- Departament: És l’àrea de l’empresa on treballa i determina els recursos als quals pot accedir.
 
----
+--- Funció o responsabilitat: És el rol que té dins del departament:
 
 Hi ha persones que, pel seu càrrec o funció, necessiten accessos diferents dels altres membres del seu departament?
 
-☐ Sí  
+x Sí  
 ☐ No
 
 Posa'n algun exemple:
 
----
-
----
-
----
+--- Responsable de departament Laia Macias: Necessita poder accedir als recursos del seu departament amb permisos complerts i necessita acces a carpetes compartides amb direcció.
 
 # 2. Recursos de l'empresa
 
