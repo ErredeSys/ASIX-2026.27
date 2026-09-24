@@ -112,17 +112,21 @@ Indica:
 
 **En quina OU ubicaries el seu compte?**
 
+Ubicaria el seu compte a la OU_Administració
+
 ---
 
 **A quins grups podria pertànyer?**
 
----
+Podria pertànyer al grup gr_administració i al gr_cestiu
 
 ---
 
 ### Per què no és contradictori que estigui en una OU però pertanyi a diversos grups?
 
 ---
+
+Perqué un mateix usuari només pot pertanyer a una sola OU però diversos grups al mateix temps.
 
 ---
 
