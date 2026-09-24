@@ -30,13 +30,13 @@ No, no afegiria cap altre tipus d'objecte
 
 Proposa les **unitats organitzatives (OU)** principals que utilitzaries a MusicCloud.
 
-| OU                | Què contindrà? | Per què la crees? |
-| ----------------- | -------------- | ----------------- |
-| Direcció          |                |                   |
-| Administració     |                |                   |
-| Suport_tècnic     |                |                   |
-| Producció_mùsical |                |                   |
-| Informàtica       |                |                   |
+| OU                | Què contindrà?                                                        | Per què la crees?               |
+| ----------------- | --------------------------------------------------------------------- | ------------------------------- |
+| Direcció          | ou_capdepartament, gr_direcció i els usuaris del departament          | Per organitzar cada departament |
+| Administració     | ou_capdepartament, gr_administració i els usuaris del departament     | Per organitzar cada departament |
+| Suport_tècnic     | ou_capdepartament, gr_suport_tècnic i els usuaris del departament     | Per organitzar cada departament |
+| Producció_musical | ou_capdepartament, gr_producció_musical i els usuaris del departament | Per organitzar cada departament |
+| Informàtica       | ou_capdepartament, gr_informàtica i els usuaris del departament       | Per organitzar cada departament |
 
 ## 2.1. Organització dels usuaris
 
@@ -45,7 +45,24 @@ Dibuixa l'estructura que utilitzaries per organitzar els usuaris de MusicCloud.
 ```text
 MusicCloud
 │
-└──
+├── DEPARTAMENTS
+│   ├── Direcció
+│   ├── Administració
+│   ├── Suport tècnic
+│   ├── Producció musical
+│   └── Informàtica
+│
+├── PERFILS
+│   ├── Usuari estàndard
+│   ├── Responsable de departament
+│   ├── Administrador del sistema
+│   └── Usuari extern
+│
+└── ROLS D'USUARIS
+    ├── Usuaris_estandard
+    ├── Caps_departament
+    ├── Administradors_sistema
+    └── Usuaris_externs
 ```
 
 ---
