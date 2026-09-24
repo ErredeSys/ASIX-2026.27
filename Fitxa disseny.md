@@ -296,21 +296,19 @@ Respon breument.
 
 ### a) Per què no seria una bona idea guardar tots els usuaris, grups, equips i servidors al mateix nivell sense organitzar-los?
 
----
+Perquè seria caòtic i impossible de gestionar.
 
 ---
 
 ### b) Per què no hauríem d'utilitzar les OU per substituir els grups de permisos?
 
----
+Perquè les OU organitzen, però no donen permisos.
 
 ---
 
 ### c) Si MusicCloud passa de 14 a 500 treballadors, quina característica del disseny que has fet avui facilitarà més l'administració?
 
----
-
----
+La separació per OU i grups.
 
 ---
 
@@ -323,15 +321,65 @@ A partir de les decisions preses durant la sessió, deixa definida la proposta q
 ```text
 MusicCloud
 │
+├── ou=Usuaris
+│   ├── ou=Direccio
+│   ├── ou=Administracio
+│   ├── ou=SuportTecnic
+│   ├── ou=ProduccioMusical
+│   └── ou=Informatica
 │
+├── ou=Grups
+│   ├── cn=Direccio
+│   ├── cn=Administracio
+│   ├── cn=SuportTecnic
+│   ├── cn=ProduccioMusical
+│   ├── cn=Informatica
+│   ├── cn=UsuarisEstandard
+│   ├── cn=ResponsablesDepartament
+│   ├── cn=AdministradorsSistema
+│   └── cn=UsuarisExterns
 │
+├── ou=Equips
+│   ├── ou=OrdinadorsSobretaula
+│   ├── ou=Impresores
+│   ├── ou=Portatils
+│   ├── ou=Mobils
+│   └── ou=Servidors
 │
+├── ou=Xarxa
+│   ├── ou=Routers
+│   ├── ou=Switchs
+│   ├── ou=Firewalls
+│   ├── ou=NAS
+│   └── ou=SAIS
+│
+└── ou=ComptesAplicacions
+    ├── cn=protools
+    ├── cn=ableton
+    ├── cn=erp-administracio
+    ├── cn=helpdesk-suport
+    └── cn=monitoritzacio-it
+
 ```
 
 ## Criteri utilitzat per organitzar els objectes
 
----
+He organitzat els objectes segons que són i la seva funció:
+
+Usuaris → agrupats per departament
+
+Grups → separats perquè són els que gestionen permisos i rols.
+
+Equips → classificats per tipus de dispositiu per aplicar polítiques específiques.
+
+Xarxa → dispositius de infraestructura separats dels equips normals.
+
+Comptes d’aplicacions → agrupats per facilitar la gestió de serveis i llicències.
 
 ---
 
 ## Criteri utilitzat per diferenciar OU i grups
+
+OU → Serveixen per organitzar objectes (usuaris, equips, servidors).
+
+Grups → Serveixen per assignar permisos i definir rols.
