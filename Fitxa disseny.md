@@ -268,23 +268,25 @@ Escull **dues decisions** del teu DIT que consideris importants i justifica-les.
 
 ### Decisió 1
 
+Separar els usuaris per departaments dins ou=Usuaris
+
 ---
 
 **Justificació:**
 
----
+He separat els usuaris en sub‑OU segons el departament perquè és la manera més eficient d’organitzar MusicCloud.
 
 ---
 
 ### Decisió 2
 
+Crear una OU separada per a ou=Equips i subdividir-la per tipus de dispositiu
+
 ---
 
 **Justificació:**
 
----
-
----
+He creat una OU específica per als equips (ordinadors, portàtils, mòbils, servidors…) perquè aquests objectes no s’han de barrejar amb els usuaris.
 
 ---
 
