@@ -73,27 +73,29 @@ Indica quina opció utilitzaries principalment en cada cas.
 
 | Necessitat                                                | OU  | Grup |
 | --------------------------------------------------------- | :-: | :--: |
-| Organitzar els treballadors d'Administració               |  ☐  |  ☐   |
-| Donar accés a la carpeta d'Administració                  |  ☐  |  ☐   |
-| Organitzar els ordinadors clients                         |  ☐  |  ☐   |
-| Identificar les persones que participen en Campanya Estiu |  ☐  |  ☐   |
-| Organitzar els servidors                                  |  ☐  |  ☐   |
-| Donar privilegis als administradors del sistema           |  ☐  |  ☐   |
-| Organitzar els comptes utilitzats per aplicacions         |  ☐  |  ☐   |
+| Organitzar els treballadors d'Administració               |  x  |  ☐   |
+| Donar accés a la carpeta d'Administració                  |  ☐  |  x   |
+| Organitzar els ordinadors clients                         |  x  |  ☐   |
+| Identificar les persones que participen en Campanya Estiu |  ☐  |  x   |
+| Organitzar els servidors                                  |  x  |  ☐   |
+| Donar privilegis als administradors del sistema           |  ☐  |  x   |
+| Organitzar els comptes utilitzats per aplicacions         |  x  |  ☐   |
 
 ### Explica amb les teves paraules la diferència principal entre una OU i un grup.
 
 **OU:**
 
----
+- No pots donar permisos
+- Només ordena i estructura informació
+- S'utilitza per aplicar GPOs
 
 ---
 
 **Grup:**
 
----
-
----
+- Pots donar accés i permisos a carpetes i recursos
+- Permet definir rols
+- Pots posar-hi persones que pertanyen a diferents UO
 
 ---
 
