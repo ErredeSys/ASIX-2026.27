@@ -136,13 +136,16 @@ Perqué un mateix usuari només pot pertanyer a una sola OU però diversos grups
 
 Explica breument què entens per **servei de directori**.
 
----
+Per servei de directori entenc un sistema que organitza informació sobre tots els elements d'una empresa. Seria com una base central que permet saber els usuaris, a quin departament pertanyen, quins recursos poden utilitzar i quines màquines hi ha dins la xarxa de l'empresa.
 
 ---
 
 Quin problema resol a MusicCloud?
 
----
+- Evita gestionar permisos manualment als usuaris
+- Organitza l'empresa de manera clara
+- Dona accés al que necessita cada un
+- Facilita altes, baixes i possibles canvis
 
 ---
 
