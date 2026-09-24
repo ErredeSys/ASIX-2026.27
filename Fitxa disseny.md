@@ -194,10 +194,70 @@ Ha de mostrar, com a mínim:
 ```text
 MusicCloud
 │
+├── ou=Usuaris
+│   ├── ou=Direccio
+│   │   ├── uid=aciurans (usuari_estandard)
+│   │   └── uid=rtornil (usuari_estandard)
+│   │
+│   ├── ou=Administracio
+│   │   ├── uid=dgasso (usuari_estandard)
+│   │   └── uid=lmacias (responsable_departament)
+│   │
+│   ├── ou=SuportTecnic
+│   │   ├── uid=ebirosta (usuari_estandard)
+│   │   ├── uid=azuriguel (usuari_estandard)
+│   │   └── uid=lrichart (responsable_departament)
+│   │
+│   ├── ou=ProduccioMusical
+│   │   ├── uid=ralberch (usuari_estandard)
+│   │   ├── uid=gadella (usuari_estandard)
+│   │   ├── uid=mreglat (responsable_departament)
+│   │   ├── uid=amonclus (usuari_estandard)
+│   │   ├── uid=cmolins (usuari_estandard)
+│   │   └── uid=egalcera (usuari_estandard)
+│   │
+│   └── ou=Informatica
+│       ├── uid=tcostas (admin_sistema)
+│       └── uid=asoriano (admin_sistema)
 │
+├── ou=Grups
+│   ├── cn=Direcció
+│   ├── cn=Administració
+│   ├── cn=SuportTecnic
+│   ├── cn=ProduccióMusical
+│   ├── cn=Informàtica
+│   │
+│   ├── cn=UsuarisEstandard
+│   ├── cn=ResponsablesDepartament
+│   ├── cn=AdministradorsSistema
+│   └── cn=UsuarisExterns
 │
+├── ou=Equips
+│   ├── ou=OrdinadorsSobretaula
+|       └── cn=pc-MAC
+|   ├── ou=Impresores
+|       └── cn=pr-SN
+|   ├── ou=Portàtils
+|       └── cn=pt-MAC
+|   ├── ou=Mòbils
+|       └── cn=ph-SN
+|   └── ou=Servidors
+|       └── cn=srv-MAC
 │
+├── ou=Xarxa
+|   ├── ou=Routers
+|   ├── ou=Switchs
+|   ├── ou=Firewalls
+|   ├── ou=NAS
+|   └── ou=SAIS
 │
+└── ou=ComptesAplicacions
+    ├── cn=protools
+    ├── cn=ableton
+    ├── cn=erp-administracio
+    ├── cn=helpdesk-suport
+    └── cn=monitoritzacio-it
+
 ```
 
 ---
