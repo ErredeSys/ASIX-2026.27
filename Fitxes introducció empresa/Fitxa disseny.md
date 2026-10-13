@@ -63,8 +63,6 @@ MusicCloud
     ├── Administradors_sistema
     └── Usuaris_externs
 
-Com dius més endavant, un usuari només pot estar en una OU. Però els treballadors pertanyen a un departament, tenen un perfil informàtic i un o més rols. L'estructura que proposes dificulta la classificació i l'estructuració jeràrquica dels objectes.
-
 ```
 
 ---
@@ -276,9 +274,7 @@ Separar els usuaris per departaments dins ou=Usuaris
 
 **Justificació:**
 
-He separat els usuaris en sub‑OU segons el departament perquè és la manera més eficient d’organitzar MusicCloud.
-
----
+## He separat els usuaris en sub-OU segons el departament perquè així puc aplicar polítiques de grup (GPO) diferents a cada departament i facilitar la gestió dels comptes d'usuari, les seves configuracions i els seus recursos.
 
 ### Decisió 2
 
