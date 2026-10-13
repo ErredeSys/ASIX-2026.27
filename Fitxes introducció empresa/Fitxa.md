@@ -22,23 +22,23 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 
 Completa la taula següent.
 
-| Persona          | Departament       | Funció / responsabilitat   | Necessita privilegis especials? Per què?                                                                                                   |
-| ---------------- | ----------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Aina Ciurans     | Direcció          | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Rut Tornil       | Direcció          | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Dídac Gassó      | Administració     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Laia Macias      | Administració     | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
-| Estel Birosta    | Suport tècnic     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Aina Zuriguel    | Suport tècnic     | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Lluïsa Richart   | Suport tècnic     | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
-| Roser Alberch    | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Guillem Adella   | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Meritxell Reglat | Producció musical | Responsable de departament | Sí, Accedir als recursos del seu departament amb permisos complets i consultar determinats informes o carpetes compartides amb direcció.   |
-| Alícia Monclús   | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Carles Molins    | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Eulàlia Galcera  | Producció musical | Usuari estàndard           | Sí, Accedir a la seva carpeta personal, als recursos del seu departament i als recursos comuns de l'empresa.                               |
-| Talia Costas     | Informàtica       | Administrador del sistema  | Sí, Crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
-| Alex Soriano     | Informàtica       | Administrador del sistema  | Sí, Crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
+| Persona          | Departament       | Funció / responsabilitat   | Necessita privilegis especials? Per què?                                                                                                                                         |
+| ---------------- | ----------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aina Ciurans     | Direcció          | Usuari estàndard           | No. Pot consultar la seva carpeta personal, els recursos del seu departament, els recursos comuns de l'empresa i la informació de consulta autoritzada dels altres departaments. |
+| Rut Tornil       | Direcció          | Usuari estàndard           | No. Pot consultar la seva carpeta personal, els recursos del seu departament, els recursos comuns de l'empresa i la informació de consulta autoritzada dels altres departaments. |
+| Dídac Gassó      | Administració     | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Laia Macias      | Administració     | Responsable de departament | No necessàriament. Pot consultar i modificar els documents del departament segons els permisos assignats i accedir als recursos comuns de l'empresa.                             |
+| Estel Birosta    | Suport tècnic     | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Aina Zuriguel    | Suport tècnic     | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Lluïsa Richart   | Suport tècnic     | Responsable de departament | No necessàriament. Pot consultar i modificar els documents del departament segons els permisos assignats i accedir als recursos comuns de l'empresa.                             |
+| Roser Alberch    | Producció musical | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Guillem Adella   | Producció musical | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Meritxell Reglat | Producció musical | Responsable de departament | No necessàriament. Pot consultar i modificar els documents del departament segons els permisos assignats i accedir als recursos comuns de l'empresa.                             |
+| Alícia Monclús   | Producció musical | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Carles Molins    | Producció musical | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Eulàlia Galcera  | Producció musical | Usuari estàndard           | No. Pot consultar i modificar els documents del seu espai de treball segons els permisos assignats, així com accedir als recursos comuns de l'empresa.                           |
+| Talia Costas     | Informàtica       | Administrador del sistema  | Sí. Necessita permisos administratius per crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
+| Alex Soriano     | Informàtica       | Administrador del sistema  | Sí. Necessita permisos administratius per crear i modificar usuaris, gestionar grups, configurar serveis, revisar logs, administrar permisos i accedir remotament als servidors. |
 
 ### 1.1. Reflexió
 
@@ -451,4 +451,3 @@ Justifica la resposta.
 ---
 
 He escollit aquesta opció ja que en cas de fer-ho individualment tindria molta feina manual, tindria alt risc de cometre errors i seria molt complicat fer un manteniment de tantes persones. D'aquesta manera que he escollit, podria genaralitzar els permisos en grups segons departaments i rol, podria afegir i treure persones amb molt poc temps i tindria una escalabilitat molt gran.
-
