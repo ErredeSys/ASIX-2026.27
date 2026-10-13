@@ -363,7 +363,7 @@ Proposo crear un grup a cada departament on pertanyi cada cap per tenir diferent
 
 ---
 
-# 9. Un altre cas
+**# 9. Un altre cas**
 
 Diverses persones de departaments diferents participen temporalment en el projecte:
 
@@ -378,39 +378,37 @@ x No
 
 Si no, com podríem donar-los accés als recursos del projecte?
 
----
-
-Per donar-los accés, hauriem d'assignar permisos a les carpetes compartides i no directament als usuaris o al grup.
+Per donar-los accés, hauríem de crear un grup específic per al projecte i assignar-li els permisos necessaris per accedir als recursos compartits.
 
 ---
 
-# 10. Conclusions
+**# 10. Conclusions**
 
 Completa les frases amb les teves paraules.
 
-### Usuari
+**### Usuari**
 
-Un usuari representa: una persona
-
----
-
-### Recurs
-
-Un recurs és: un directori
+Un usuari representa: una persona.
 
 ---
 
-### Permís
+**### Recurs**
 
-Un permís determina: els privilegis d'accés
+Un recurs és: un element del sistema informàtic, com ara un directori, un fitxer o una impressora.
 
 ---
 
-### Grup
+**### Permís**
+
+Un permís determina: els privilegis d'accés a un recurs.
+
+---
+
+**### Grup**
 
 Un grup serveix per:
 
-Donar permisos a un conjunt d'usuaris
+Donar permisos a un conjunt d'usuaris.
 
 ---
 
