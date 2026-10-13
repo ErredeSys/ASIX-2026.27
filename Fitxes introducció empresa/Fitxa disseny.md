@@ -28,21 +28,50 @@ No, no afegiria cap altre tipus d'objecte
 
 # 2. Organització mitjançant unitats organitzatives
 
-Proposa les **unitats organitzatives (OU)** principals que utilitzaries a MusicCloud.
+Proposa les unitats organitzatives (OU) principals que utilitzaries a MusicCloud.
 
-| OU                | Què contindrà?                                                        | Per què la crees?               |
-| ----------------- | --------------------------------------------------------------------- | ------------------------------- |
-| Direcció          | ou_capdepartament, gr_direcció i els usuaris del departament          | Per organitzar cada departament |
-| Administració     | ou_capdepartament, gr_administració i els usuaris del departament     | Per organitzar cada departament |
-| Suport_tècnic     | ou_capdepartament, gr_suport_tècnic i els usuaris del departament     | Per organitzar cada departament |
-| Producció_musical | ou_capdepartament, gr_producció_musical i els usuaris del departament | Per organitzar cada departament |
-| Informàtica       | ou_capdepartament, gr_informàtica i els usuaris del departament       | Per organitzar cada departament |
+OU
+
+Què contindrà?
+
+Per què la crees?
+
+Direcció
+
+gr_direcció i els usuaris del departament
+
+Per organitzar els usuaris de Direcció i facilitar-ne l'administració.
+
+Administració
+
+gr_administració i els usuaris del departament
+
+Per organitzar els usuaris d'Administració i facilitar-ne l'administració.
+
+Suport_tècnic
+
+gr_suport_tècnic i els usuaris del departament
+
+Per organitzar els usuaris de Suport tècnic i facilitar-ne l'administració.
+
+Producció_musical
+
+gr_producció_musical i els usuaris del departament
+
+Per organitzar els usuaris de Producció musical i facilitar-ne l'administració.
+
+Informàtica
+
+gr_informàtica i els usuaris del departament
+
+Per organitzar els usuaris d'Informàtica i facilitar-ne l'administració.
+
+No cal crear una ou_capdepartament dins de cada departament pel fet que hi ha un responsable. S'han de crear les OUs necessàries per gestionar el sistema de forma eficient.
 
 ## 2.1. Organització dels usuaris
 
-Dibuixa l'estructura que utilitzaries per organitzar els usuaris de MusicCloud.
+```
 
-```text
 MusicCloud
 │
 ├── DEPARTAMENTS
@@ -63,6 +92,9 @@ MusicCloud
     ├── Caps_departament
     ├── Administradors_sistema
     └── Usuaris_externs
+
+Com dius més endavant, un usuari només pot estar en una OU. Però els treballadors pertanyen a un departament, tenen un perfil informàtic i un o més rols. L'estructura que proposes dificulta la classificació i l'estructuració jeràrquica dels objectes.
+
 ```
 
 ---
