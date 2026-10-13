@@ -274,7 +274,7 @@ Separar els usuaris per departaments dins ou=Usuaris
 
 **Justificació:**
 
-## He separat els usuaris en sub-OU segons el departament perquè així puc aplicar polítiques de grup (GPO) diferents a cada departament i facilitar la gestió dels comptes d'usuari, les seves configuracions i els seus recursos.
+He separat els usuaris en sub-OU segons el departament perquè així puc aplicar polítiques de grup (GPO) diferents a cada departament i facilitar la gestió dels comptes d'usuari, les seves configuracions i els seus recursos.
 
 ### Decisió 2
 
