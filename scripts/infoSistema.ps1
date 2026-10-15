@@ -14,4 +14,4 @@ Write-Host "Equip: $equip"
 Write-Host "Usuari: $usuari"
 Write-Host "PowerShell: $versio"
 Write-Host "Data: $data"
-Write-Host "Directori actual: $directori".
+Write-Host "Directori actual: $directori"
