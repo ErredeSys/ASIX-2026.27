@@ -44,13 +44,23 @@ Responeu breument:
 
 1.  Per què el servidor `SRV-AD-01` necessita una adreça IP fixa?
 
+> El servidor necessita una adreça IP fixa ja que els usuaris i els serveis buscaràn el servidor per la mateixa IP sempre ja que fa de DC i DNS alhora. Els clients han de tenir la seva IP al dns, i si cambies, no podrien localitzar el domini.
+
 2.  Per què els clients del domini han d’utilitzar un servidor DNS capaç de resoldre la zona d’Active Directory?
+
+> Els clients del domini han d'utilitzar un servidor DNS capaç de resoldre la zona d'Active Directory ja que és el mitjà per localitzar el DC i els serveis de domini com Kerberos i LDAP.
 
 3.  Què passaria si `SRV-AD-01` estigués apagat?
 
+> Si SRV-AD-01 estigués apagat, els usuaris no es podrien autenticar al domini i només podrien iniciar sessió els que tenen les credencials a la cachè. Tampoc es podria entrar a les carpetes compartides, aplicar GPOs i el DNS intern no funcionaria.
+
 4.  Per què un únic controlador de domini és acceptable al laboratori però insuficient en una empresa real?
 
+> És acceptable ja que en el laboratori no tindrem dades crítiques ni usuaris que depenguiin del servei i en cas de fallada, no pasaria res. En canvi, en una empresa real, si cau el DC es pararia tota l'empresa. Per tant, necessitariem tenir més d'un DC amb replicació que ens aportaria redundancia.
+
 5.  Per què els departaments no s’han creat com a dominis diferents?
+
+> Els departaments no s'han creat com a dominis diferents ja que són una divisió únicament organitzativa i no de seguretat ni administrativa. Com musiccloud es una empresa petita, amb un únic domini, OU i grups ja en tenim suficient.
 
 # Planificació de la implantació
 
