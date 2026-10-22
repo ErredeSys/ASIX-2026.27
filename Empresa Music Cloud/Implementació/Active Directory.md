@@ -66,24 +66,26 @@ Responeu breument:
 
 Ordeneu les accions següents:
 
-- crear els usuaris.
+- crear els usuaris: 7
 
-- comprovar el DNS.
+- comprovar el DNS: 4
 
-- assignar els usuaris als grups.
+- assignar els usuaris als grups: 8
 
-- instal·lar AD DS.
+- instal·lar AD DS: 2
 
-- crear les unitats organitzatives.
+- crear les unitats organitzatives: 5
 
-- preparar la xarxa del servidor.
+- preparar la xarxa del servidor: 1
 
-- unir el client al domini.
+- unir el client al domini: 9
 
-- crear el bosc i el domini.
+- crear el bosc i el domini: 3
 
-- crear els grups.
+- crear els grups: 6
 
-- comprovar el funcionament del domini.
+- comprovar el funcionament del domini: 10
 
 Justifiqueu breument l’ordre escollit.
+
+> Primer cal tenir una xarxa que funcioni amb un servidor amb IP fixa i el DNS apuntant a ell mateix. Després cal instal·lar el rol AD DS i ens demanarà crear el bosc i el domini. Una vegada creat el rol, comprovem que funcioni el DNS en local per després quan entrem amb els clients sapiguem que funciona correctament. Seguidament crem les OU per tenir una estructura, els grups i els usuaris. Assignem cada usuari al grup que pertany per tenir els permisos que necessita cada un. Finalment una vegada tot creat, unim un client al domini i comprovem que funciona.
