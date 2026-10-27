@@ -87,6 +87,12 @@ Definiu una contrasenya segura per al mode de restauració de serveis de directo
 Install-ADDSForest -DomainName "musiccloud.local" -DomainNetbiosName "MUSICCLOUD" -InstallDNS -NoRebootOnCompletion:$false
 ```
 
+> I també aquesta altre per posar-li el nom que li correspon:
+
+```
+Rename-Computer -NewName "SRV-AD-01"
+```
+
 > Seguidament m'ha demanat que indiques la contrasenya del DSRM.
 
 ### Part 4. Verificació
@@ -101,22 +107,28 @@ Després del reinici, comproveu:
 
 Completeu la taula següent. Adjunta la comanda que has utilitzat per a cada una de les comprovacions.
 
-| Comprovació                          | Resultat |
-| ------------------------------------ | -------- |
-| Nom del servidor                     |          |
-| IP fixa configurada                  |          |
-| AD DS instal·lat                     |          |
-| Domini creat                         |          |
-| DNS instal·lat                       |          |
-| Resolució de `musiccloud.local`      |          |
-| Eines d’Active Directory disponibles |          |
+| Comprovació                          | Resultat                              |
+| ------------------------------------ | ------------------------------------- |
+| Nom del servidor                     | hostname                              |
+| IP fixa configurada                  | Get-NetIPAddress                      |
+| AD DS instal·lat                     | Get-WindowsFeature AD-Domain-Services |
+| Domini creat                         | Get-ADDomain                          |
+| DNS instal·lat                       | Get-WindowsFeature DNS                |
+| Resolució de `musiccloud.local`      | Resolve-DnsName musiccloud.local      |
+| Eines d’Active Directory disponibles | Get-WindowsFeature RSAT-AD-Tools      |
 
 ## Preguntes
 
 Responeu breument:
 
 1. Per què `SRV-AD-01` necessita una IP fixa?
+
+> Perquè un controlador de domini s'ha de poder localitzar sempre a la mateixa IP, ja que si canvies, els clients no podrien contactar amb l'AD.
+
 2. Per què és necessari DNS en un domini Active Directory?
+
+> El DNS en un domini d'AD és necessari ja que sense ell els usuaris i equips no es podrien autenticar i també es necessari per resoldre serveis i localitzar controladors de domini.h
+
 3. Quina diferència hi ha entre instal·lar AD DS i promocionar el servidor a controlador de domini?
 4. Quin és el nom del domini creat?
 5. Quin és el nom NetBIOS del domini?
