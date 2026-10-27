@@ -81,9 +81,13 @@ Promocioneu el servidor a controlador de domini amb les opcions següents:
 
 Definiu una contrasenya segura per al mode de restauració de serveis de directori.
 
-```
+> Per promocionar el servidor i indicar les diferents opcions he utilitzat aquesta comanda:
 
 ```
+Install-ADDSForest -DomainName "musiccloud.local" -DomainNetbiosName "MUSICCLOUD" -InstallDNS -NoRebootOnCompletion:$false
+```
+
+> Seguidament m'ha demanat que indiques la contrasenya del DSRM.
 
 ### Part 4. Verificació
 
