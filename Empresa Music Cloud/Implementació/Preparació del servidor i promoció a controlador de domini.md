@@ -43,15 +43,27 @@ Completeu la taula següent:
 
 | Paràmetre        | Valor configurat |
 | ---------------- | ---------------- |
-| Adreça IP        |                  |
-| Màscara          |                  |
+| Adreça IP        | 192.168.37.2     |
+| Màscara          | 255.255.255.0    |
 | Porta d’enllaç   |                  |
-| DNS preferit     |                  |
-| Nom del servidor |                  |
+| DNS preferit     | 192.168.37.2     |
+| Nom del servidor | SRV-AD-01        |
 
 ### Part 2. Instal·lació del rol AD DS
 
 Localitzeu i utilitzeu el procediment adequat per instal·lar el rol AD DS i promocionar el servidor a controlador de domini. Documenteu breument les comandes o passos utilitzats.
+
+> Pas 1: Instal·lar el rol amb aquesta comanda
+
+```
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+```
+
+> Pas 2: Importar el mòdul AD DS
+
+```
+Import-Module ADDSDeployment
+```
 
 ### Part 3. Promoció a controlador de domini
 
@@ -68,6 +80,10 @@ Promocioneu el servidor a controlador de domini amb les opcions següents:
 | Reinici final                          | Sí                 |
 
 Definiu una contrasenya segura per al mode de restauració de serveis de directori.
+
+```
+
+```
 
 ### Part 4. Verificació
 
