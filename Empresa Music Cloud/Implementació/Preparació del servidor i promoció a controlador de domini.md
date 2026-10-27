@@ -130,6 +130,17 @@ Responeu breument:
 > El DNS en un domini d'AD és necessari ja que sense ell els usuaris i equips no es podrien autenticar i també es necessari per resoldre serveis i localitzar controladors de domini.h
 
 3. Quina diferència hi ha entre instal·lar AD DS i promocionar el servidor a controlador de domini?
+
+> Instal·lar AD DS només afegeix el rol al servidor, en canvi, promocionar crea el bosc, el domini, la DB AD, DNS i converteix el servidor en un DC.
+
 4. Quin és el nom del domini creat?
+
+> musiccloud.local
+
 5. Quin és el nom NetBIOS del domini?
+
+> MUSICCLOUD
+
 6. Per què no és recomanable que els clients del domini utilitzin un DNS extern com a DNS principal?
+
+> No es recomanable ja que no podrien torbar el DC, no podrien iniciar sessió, no es podrien aplicar GPOs i tampoc pot resoldre serveis d'AD.
