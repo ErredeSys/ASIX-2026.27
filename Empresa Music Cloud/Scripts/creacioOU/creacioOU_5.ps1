@@ -4,7 +4,7 @@ param(
     [Parameter(Mandatory=$true)]
     [string]$nomOU,
 
-    [string]$ruta = "DC=musiccloud,DC=local"
+    [string]$ruta = "OU=MusicCloud,DC=musiccloud,DC=local"
 )
 
 try {
