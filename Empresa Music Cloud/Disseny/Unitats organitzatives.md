@@ -75,6 +75,16 @@ Sistemes
 Direccio
 ```
 
+> New-ADOrganizationalUnit -Name "Administracio" -Path "OU=Usuaris,OU=MusicCloud,DC=musiccloud,DC=local"
+
+> New-ADOrganizationalUnit -Name "Comercial" -Path "OU=Usuaris,OU=MusicCloud,DC=musiccloud,DC=local"
+
+> New-ADOrganizationalUnit -Name "Desenvolupament" -Path "OU=Usuaris,OU=MusicCloud,DC=musiccloud,DC=local"
+
+> New-ADOrganizationalUnit -Name "Sistemes" -Path "OU=Usuaris,OU=MusicCloud,DC=musiccloud,DC=local"
+
+> New-ADOrganizationalUnit -Name "Direccio" -Path "OU=Usuaris,OU=MusicCloud,DC=musiccloud,DC=local"
+
 ## Part 4. Creació de les UO d’equips
 
 Dins de la UO `Equips`, creeu les UO següents:
@@ -83,6 +93,10 @@ Dins de la UO `Equips`, creeu les UO següents:
 Clients
 Servidors
 ```
+
+> New-ADOrganizationalUnit -Name "Clients" -Path "OU=Equips,OU=MusicCloud,DC=musiccloud,DC=local"
+
+> New-ADOrganizationalUnit -Name "Servidors" -Path "OU=Equips,OU=MusicCloud,DC=musiccloud,DC=local"
 
 ## Part 5. Verificació
 
