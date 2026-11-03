@@ -104,11 +104,18 @@ Executeu una consulta que mostri totes les unitats organitzatives del domini.
 
 La sortida ha de mostrar, com a mínim, les UO creades en aquesta pràctica.
 
+> Get-ADOrganizationalUnit -Filter \* | Select-Object Name, DistinguishedName
+
+![](../../Powershell/img/comprovacioOU.png)
+
 ## Part 6. Preguntes
 
 Responeu breument:
 
 1. Per què és útil crear una UO principal anomenada `MusicCloud`?
+
+> És útil per tenir organitzada tota l'empresa sota una única OU.
+
 2. Per què se separen `Usuaris`, `Equips` i `Grups`?
 3. Per què els departaments s’han creat dins de `Usuaris`?
 4. Per què no és recomanable deixar tots els usuaris dins del contenidor `Users`?
