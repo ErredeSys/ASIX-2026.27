@@ -134,12 +134,15 @@ Responeu breument:
 
 ```
 Import-Module ActiveDirectory
+
 Remove-ADOrganizationalUnit -Identity "OU=MusicCloud,DC=musiccloud,DC=local" -Recursive -Confirm:$false
 ```
 
 - 7.2. Crea un script que crei l'OU principal (musiccloud).
 
 ```
+Import-Module ActiveDirectory
+
 $nomOU = "MusicCloud"
 $ruta = "DC=musiccloud,DC=local"
 
@@ -156,4 +159,14 @@ if (-not $OU) {
 ```
 
 - 7.3. Crea un script que crei l'OU principal i les OUs descendents: Usuaris, Equips i Grups
+
+```
+Import-Module ActiveDirectory
+
+New-ADOrganizationalUnit -Name "MusicCloud" -Path "DC=musiccloud,DC=local"
+New-ADOrganizationalUnit -Name "Usuaris" -Path "OU=MusicCloud,DC=musiccloud,DC=local"
+New-ADOrganizationalUnit -Name "Equips" -Path "OU=MusicCloud,DC=musiccloud,DC=local"
+New-ADOrganizationalUnit -Name "Grups" -Path "OU=MusicCloud,DC=musiccloud,DC=local"
+```
+
 - 7.4. Crea un script que creï l'OU principal si no existeix i que creï únicament les UO descendents que encara no existeixin. El script s'ha de poder executar més d'una vegada sense generar errors ni duplicar objectes.
