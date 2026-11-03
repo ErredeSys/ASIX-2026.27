@@ -1,5 +1,4 @@
 #Crear múltiples OU dins de la ruta especificada, sense crear-ne que ja existeixin.
-
 param(
     [Parameter(Mandatory=$true)]
     [string[]]$nomOU,
@@ -7,16 +6,32 @@ param(
     [string]$ruta = "OU=MusicCloud,DC=musiccloud,DC=local"
 )
 
-foreach ($ou in $nomOU) {
+function Existeix-OU {
+    param(
+        [string]$nom,
+        [string]$ruta
+    )
 
     try {
-        $OU = Get-ADOrganizationalUnit -Identity "OU=$ou,$ruta" -ErrorAction Stop
+        Get-ADOrganizationalUnit -Identity "OU=$nom,$ruta" -ErrorAction Stop
+        return $true
     }
     catch {
-        $OU = $null
+        return $false
     }
+}
 
-    if (-not $OU) {
-        New-ADOrganizationalUnit -Name $ou -Path $ruta
+function New-OU {
+    param(
+        [string]$nom,
+        [string]$ruta
+    )
+
+    if (-not (Existeix-OU -nom $nom -ruta $ruta)) {
+        New-ADOrganizationalUnit -Name $nom -Path $ruta
     }
+}
+
+foreach ($ou in $nomOU) {
+    Crear-OU -nom $ou -ruta $ruta
 }
