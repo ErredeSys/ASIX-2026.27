@@ -131,6 +131,29 @@ Responeu breument:
 ## Part 7. Creació scripts
 
 - 7.1. Crea un script per eliminar totes les OUs creades en la pràctica
+
+```
+Import-Module ActiveDirectory
+Remove-ADOrganizationalUnit -Identity "OU=MusicCloud,DC=musiccloud,DC=local" -Recursive -Confirm:$false
+```
+
 - 7.2. Crea un script que crei l'OU principal (musiccloud).
+
+```
+$nomOU = "MusicCloud"
+$ruta = "DC=musiccloud,DC=local"
+
+try {
+    $OU = Get-AdOrganizationalUnit -Identity "OU=$nomOU,$ruta" -ErrorAction Stop
+}
+catch {
+    $OU = $null
+}
+
+if (-not $OU) {
+    New-AdOrganizationalUnit -Name $nomOU -Path $ruta
+}
+```
+
 - 7.3. Crea un script que crei l'OU principal i les OUs descendents: Usuaris, Equips i Grups
 - 7.4. Crea un script que creï l'OU principal si no existeix i que creï únicament les UO descendents que encara no existeixin. El script s'ha de poder executar més d'una vegada sense generar errors ni duplicar objectes.
