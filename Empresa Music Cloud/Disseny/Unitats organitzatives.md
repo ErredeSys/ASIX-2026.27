@@ -117,8 +117,16 @@ Responeu breument:
 > És útil per tenir organitzada tota l'empresa sota una única OU.
 
 2. Per què se separen `Usuaris`, `Equips` i `Grups`?
+
+> Es separen per tenir una organització dels diferents tipus d'objectes de l'empresa.
+
 3. Per què els departaments s’han creat dins de `Usuaris`?
+
+> S'han creat dins d'Usuaris per tenir organitzats tots els usuaris per departaments i després sigui molt més fàcil localitzar-los. A més, fent això ens permet aplicar GPOs i administrar permisos.
+
 4. Per què no és recomanable deixar tots els usuaris dins del contenidor `Users`?
+
+> No és recomenable ja que seria més dificl l'administració i no podriem aplicar GPOs.
 
 ## Part 7. Creació scripts
 
