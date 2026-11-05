@@ -8,12 +8,26 @@ param(
 
 function Existeix-ruta {
     param(
-        [string]$nom,
         [string]$ruta
     )
 
     try {
-        Get-ADGroup -Identity $nom -ErrorAction Stop
+        Get-ADOrganizationalUnit -Identity $ruta -ErrorAction Stop
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
+function Existeix-grup {
+    param(
+        [string]$nomgrup,
+        [string]$rutagrup
+    )
+
+    try {
+        Get-ADGROUP -Identity $nomgrup in $rutagrup -ErrorAction Stop
         return $true
     }
     catch {
@@ -27,14 +41,14 @@ function Crear-grup {
         [string]$rutagrup
     )
 
-    if (-not (Existeix- -nom $nomgrup -ruta $rutagrup)) {
-        exit
+    if (-not (Existeix-ruta -nom $nomgrup -ruta $rutagrup)) {
+        New-ADGROUP -Name $nomgrup -Path $rutagrup -GroupScope GLOBAL
     }
     else {
-        New-ADGROUP -Name $nomgrup -Path $rutagrup -GroupScope GLOBAL
+        exit
     }
 }
 
 foreach ($grup in $nomGG) {
-    Crear-grup -nom $grup -ruta $rutagrup
+    Crear-grup -nom $nomgrup -ruta $ruta
 }
