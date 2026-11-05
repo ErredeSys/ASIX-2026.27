@@ -40,13 +40,13 @@ function Crear-grup {
         [string]$rutagrup
     )
 
-    if (-not (Existeix-ruta -ruta $rutagrup)) {
-        exit
-    }
+    if (-not (Existeix-grup -nomgrup $nomgrup)) {
+    New-ADGroup -Name $nomgrup -Path $rutagrup -GroupScope Global
+}
+}
 
-    if (-not (Existeix-grup -nomgrup $nomgrup -rutagrup $rutagrup)) {
-        New-ADGroup -Name $nomgrup -Path $rutagrup -GroupScope Global
-    }
+if (-not (Existeix-ruta -ruta $ruta)) {
+    exit
 }
 
 foreach ($grup in $nomGG) {
