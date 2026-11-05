@@ -6,14 +6,14 @@ param(
     [string]$ruta = "OU=MusicCloud,DC=musiccloud,DC=local"
 )
 
-function Existeix-OU {
+function Existeix-ruta {
     param(
         [string]$nom,
         [string]$ruta
     )
 
     try {
-        Get-GROUPSCOPE -Identity $nom $ruta -ErrorAction Stop
+        Get-ADGroup -Identity $nom -ErrorAction Stop
         return $true
     }
     catch {
@@ -21,20 +21,20 @@ function Existeix-OU {
     }
 }
 
-function New-GG {
+function Crear-grup {
     param(
         [string]$nomgrup,
         [string]$rutagrup
     )
 
-    if (-not (Existeix-grup -nom $nomgrup -ruta $rutagrup)) {
+    if (-not (Existeix- -nom $nomgrup -ruta $rutagrup)) {
         exit
     }
     else {
-        New-ADGROUP -nomGG $nomgrup -ruta $rutagrup -GROUPSCOPE GLOBAL
+        New-ADGROUP -Name $nomgrup -Path $rutagrup -GroupScope GLOBAL
     }
 }
 
 foreach ($grup in $nomGG) {
-    Crear-grup -nom $ou -ruta $ruta
+    Crear-grup -nom $grup -ruta $rutagrup
 }
