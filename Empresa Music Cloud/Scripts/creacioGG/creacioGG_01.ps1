@@ -1,4 +1,5 @@
-#Crear múltiples OU dins de la ruta especificada, sense crear-ne que ja existeixin.
+#Crear múltiples grups globals dins de la ruta especificada, sense crear els que ja existeixin.
+
 param(
     [Parameter(Mandatory=$true)]
     [string[]]$nomGG,
@@ -22,6 +23,7 @@ function Existeix-ruta {
 
 function Existeix-grup {
     param(
+        [Parameter(Mandatory=$true)]
         [string]$nomgrup
     )
 
@@ -36,12 +38,15 @@ function Existeix-grup {
 
 function Crear-grup {
     param(
+        [Parameter(Mandatory=$true)]
         [string]$nomgrup,
+
+        [Parameter(Mandatory=$true)]
         [string]$rutagrup
     )
 
     if (-not (Existeix-grup -nomgrup $nomgrup)) {
-    New-ADGroup -Name $nomgrup -Path $rutagrup -GroupScope Global
+    New-ADGroup -Name $nomgrup -Path $rutagrup -GroupScope Global -ErrorAction SilentlyContinue
 }
 }
 
