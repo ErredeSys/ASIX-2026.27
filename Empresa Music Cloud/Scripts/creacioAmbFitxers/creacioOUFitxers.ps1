@@ -2,8 +2,6 @@
 param(
     [Parameter(Mandatory=$true)]
     [string]$fitxer,
-
-    [string]$ruta = "OU=MusicCloud,DC=musiccloud,DC=local"
 )
 
 function Existeix-Ruta {
@@ -22,12 +20,11 @@ function Existeix-Ruta {
 
 function Existeix-OU {
     param(
-        [string]$nom,
-        [string]$ruta
+        [string]$DN
     )
 
     try {
-        Get-ADOrganizationalUnit -Identity "OU=$nom,$ruta" -ErrorAction Stop | Out-Null
+        Get-ADOrganizationalUnit -Identity $DN -ErrorAction Stop
         return $true
     }
     catch {
@@ -37,20 +34,20 @@ function Existeix-OU {
 
 function Crear-OU {
     param(
-        [string]$nom,
-        [string]$ruta
+        [string]$DN
     )
 
-    if (-not (Existeix-OU -nom $nom -ruta $ruta)) {
-        New-ADOrganizationalUnit -Name $nom -Path $ruta
-        Write-Host "OU creada: $nom"
-    }
-    else {
-        Write-Host "La OU '$nom' ja existeix."
+    if (-not (Existeix-OU -DN $DN)) {
+
+        $parts = $DN.Split(',') #Aixó divideix el DN utilitzant les ,
+
+        $nom = $parts[0].Replace('OU=','') #Agafa el primer element de l'array i elimina el prefix OU = que té al principi, per tant el valor que queda serà el nom de la OU.
+        $ruta = ($parts[1..($parts.Count-1)]) -join ',' #Aquest pas torna com enderrera, torna a agafar tots els elements i els uneix separant-los per ,
+
+        New-ADOrganizationalUnit -Name $nom -Path $ruta 
     }
 }
 
-if (-not (Existeix-Ruta -ruta $ruta)) {
-    Write-Host "La ruta '$ruta' no existeix."
-    exit
+foreach ($ou in Get-Content $fitxer) {
+    Crear-OU -DN $ou
 }
