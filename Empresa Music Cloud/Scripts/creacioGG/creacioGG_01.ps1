@@ -28,7 +28,7 @@ function Existeix-grup {
     )
 
     try {
-        Get-ADGroup -Identity $nomgrup -ErrorAction Stop
+        Get-ADGroup -Filter "Name -eq '$nomgrup'" -ErrorAction Stop
         return $true
     }
     catch {

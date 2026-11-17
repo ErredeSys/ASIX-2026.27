@@ -6,6 +6,20 @@ param(
     [string]$ruta = "OU=MusicCloud,DC=musiccloud,DC=local"
 )
 
+function Existeix-Ruta {
+    param(
+        [string]$ruta
+    )
+
+    try {
+        Get-ADOrganizationalUnit -Identity $ruta -ErrorAction Stop
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
 function Existeix-OU {
     param(
         [string]$nom,
@@ -21,7 +35,7 @@ function Existeix-OU {
     }
 }
 
-function New-OU {
+function Crear-OU {
     param(
         [string]$nom,
         [string]$ruta
