@@ -21,11 +21,15 @@ Escriure-Log -Tipus "INFO" -Missatge "Inici de l'execució de l'script de creaci
 
 function Existeix-OU {
     param(
-        [string]$DN
+        [string]$nom,
+        [string]$ruta
     )
 
     try {
-        Get-ADOrganizationalUnit -Identity $DN -ErrorAction Stop
+        Get-ADOrganizationalUnit `
+            -Identity "OU=$nom,$ruta" `
+            -ErrorAction Stop
+
         return $true
     }
     catch {
@@ -35,15 +39,11 @@ function Existeix-OU {
 
 function Crear-OU {
     param(
-        [string]$DN
+        [string]$nom,
+        [string]$ruta
     )
 
-    if (-not (Existeix-OU -DN $DN)) {
-
-        $parts = $DN.Split(',') #Aixó divideix el DN utilitzant les ,
-
-        $nom = $parts[0].Replace('OU=','') #Agafa el primer element de l'array i elimina el prefix OU = que té al principi, per tant el valor que queda serà el nom de la OU.
-        $ruta = ($parts[1..($parts.Count-1)]) -join ',' # Agafa tots els elements excepte el primer i els torna a unir per obtenir la ruta pare de la OU.
+    if (-not (Existeix-OU -nom $nom -ruta $ruta)) {
 
         try {
             New-ADOrganizationalUnit -Name $nom -Path $ruta -ErrorAction Stop
@@ -58,17 +58,19 @@ function Crear-OU {
                 -Missatge "Error en crear l'OU '$nom'"
         }
     }
-    
     else {
 
         Escriure-Log `
             -Tipus "WARN" `
-            -Missatge "L'OU '$DN' ja existeix"
+            -Missatge "L'OU '$nom' ja existeix"
     }
 }
 
-foreach ($ou in Get-Content $fitxer) {
-    Crear-OU -DN $ou
+Import-Csv $fitxer | ForEach-Object {
+
+    Crear-OU `
+        -nom $_.Nom `
+        -ruta $_.Ruta
 }
 
 Escriure-Log -Tipus "INFO" -Missatge "Final de l'execució de l'script"
