@@ -24,3 +24,15 @@ Get-ADOrganizationalUnit -Filter * | Select-Object Name, DistinguishedName
 
 He comprovat que les unitats organitzatives s'han creat dins de la ruta indicada i que, si torno a executar l'script, no es creen duplicades.
 :::
+
+## 2. Script – Creació de múltiples OUs utilitzant fitxers
+
+### Prova 1 – Creació de les OUs
+
+Executem l'script amb el CSV OUs.csv i comprovem el resultat:
+
+```powershell
+Get-ADOrganizationalUnit -Filter * | Select-Object Name, DistinguishedName
+```
+
+Apareixen `Usuaris`, `Equips`, `Grups` i les tres OUs dins de `Usuaris`.
