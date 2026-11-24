@@ -36,3 +36,25 @@ Get-ADOrganizationalUnit -Filter * | Select-Object Name, DistinguishedName
 ```
 
 Apareixen `Usuaris`, `Equips`, `Grups` i les tres OUs dins de `Usuaris`.
+
+### Prova 2 – Segona execució (no es dupliquen)
+
+Tornem a executar l'script amb el mateix CSV:
+
+```powershell
+.\script.ps1 -fitxer .\OUs.csv
+Get-Content .\registre.log -Tail 10
+```
+
+Resultat esperat: al log surt un `[WARN] L'OU '...' ja existeix` per cada fila, i el nombre d'OUs no canvia.
+
+### Prova 3 – Ruta que no existeix
+
+Afegim una fila al CSV amb una ruta inexistent:
+
+```csv
+Nom,Ruta
+Proves,"OU=NoExisteix,DC=musiccloud,DC=local"
+```
+
+Resultat esperat: l'OU no es crea i al log apareix `[ERR] Error en crear l'OU 'Proves'`. L'script continua amb la resta de files.
